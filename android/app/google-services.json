@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "674937610549",
+    "project_id": "instagram-clone-course-app",
+    "storage_bucket": "instagram-clone-course-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674937610549:android:b8df82e5805d3a8c17ec7c",
+        "android_client_info": {
+          "package_name": "com.example.instaClone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674937610549:android:ce48bf664d86a3f117ec7c",
+        "android_client_info": {
+          "package_name": "com.example.instagramCloneApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674937610549:android:2c5e901bed8c4eef17ec7c",
+        "android_client_info": {
+          "package_name": "com.example.instagram_"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
