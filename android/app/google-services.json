@@ -7,31 +7,25 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:674937610549:android:b8df82e5805d3a8c17ec7c",
-        "android_client_info": {
-          "package_name": "com.example.instaClone"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:674937610549:android:ce48bf664d86a3f117ec7c",
         "android_client_info": {
           "package_name": "com.example.instagramCloneApp"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "674937610549-q2jcmtt54hcc80ve5eu6kpmmvs1gu5ap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.instagramCloneApp",
+            "certificate_hash": "f779fff1d8f8a6d291f592b4546807d55352a05e"
+          }
+        },
+        {
+          "client_id": "674937610549-de9936chf2ilmtulgoejs98jm5ncugk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
@@ -39,26 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:674937610549:android:2c5e901bed8c4eef17ec7c",
-        "android_client_info": {
-          "package_name": "com.example.instagram_"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDvp2hNXMkpnwDObrzJEb1h2F1jRxW6yrM"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "674937610549-de9936chf2ilmtulgoejs98jm5ncugk4.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "674937610549-5ndevcv7abe4levugqrhf7jsrhh82i8m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.instagramCloneApp"
+              }
+            }
+          ]
         }
       }
     }

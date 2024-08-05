@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Myapp</string>
+	<string>instagram-clone-app</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,5 +45,34 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.674937610549-5ndevcv7abe4levugqrhf7jsrhh82i8m</string>
+				<string>fb1660657811423042</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1660657811423042</string>
+	<key>FacebookClientToken</key>
+	<string>609bfb2b71be1e0ca936fe3550b638a8</string>
+	<key>FacebookDisplayName</key>
+	<string>instagram-clone-app</string>
+
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+	</array>
+
+	<key>GIDClientID</key>
+	<string>674937610549-5ndevcv7abe4levugqrhf7jsrhh82i8m.apps.googleusercontent.com</string>
+
 </dict>
 </plist>

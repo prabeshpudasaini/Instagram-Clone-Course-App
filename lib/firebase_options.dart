@@ -63,6 +63,9 @@ class DefaultFirebaseOptions {
     messagingSenderId: '674937610549',
     projectId: 'instagram-clone-course-app',
     storageBucket: 'instagram-clone-course-app.appspot.com',
+    androidClientId: '674937610549-q2jcmtt54hcc80ve5eu6kpmmvs1gu5ap.apps.googleusercontent.com',
+    iosClientId: '674937610549-5ndevcv7abe4levugqrhf7jsrhh82i8m.apps.googleusercontent.com',
     iosBundleId: 'com.example.instagramCloneApp',
   );
+
 }
