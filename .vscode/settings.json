@@ -4,7 +4,9 @@
     "workbench.iconTheme": "material-icon-theme",
     "cSpell.words": [
         "autocorrect",
-        "riverpod"
+        "Firestore",
+        "riverpod",
+        "typedefs"
     ],
     "dart.documentation": "full",
     //Dart Settings

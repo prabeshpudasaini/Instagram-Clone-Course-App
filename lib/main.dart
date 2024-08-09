@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:instagram_clone_app/state/auth/backend/authenticator.dart';
+import 'package:instagram_clone_app/state/auth/providers/auth_state_provider.dart';
+import 'package:instagram_clone_app/state/auth/providers/is_logged_in_provider.dart';
 import 'firebase_options.dart';
+
+import 'dart:developer' as devtools show log;
+
+extension Log on Object {
+  void log() => devtools.log(toString());
+}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -39,20 +48,66 @@ class MyApp extends StatelessWidget {
       // ),
 
       themeMode: ThemeMode.dark,
-      home: const HomePage(),
+      home: Consumer(
+        builder: (context, ref, child) {
+          final isLoggedIn = ref.watch(isLoggedInProvider);
+          if (isLoggedIn) {
+            return const MainView();
+          } else {
+            return const LoginView();
+          }
+        },
+      ),
     );
   }
 }
 
-class HomePage extends ConsumerWidget {
-  const HomePage({super.key});
+class MainView extends ConsumerWidget {
+  const MainView({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Text('Main View'),
+        ),
+        body: Consumer(
+          builder: (context, ref, child) {
+            return TextButton(
+              onPressed: () async {
+                await ref.read(authStateProvider.notifier).logOut();
+              },
+              child: const Text('Logout'),
+            );
+          },
+        ));
+  }
+}
+
+class LoginView extends ConsumerWidget {
+  const LoginView({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text('Instant-Gram'),
+        title: const Text('Login View'),
+      ),
+      body: Column(
+        children: [
+          TextButton(
+            onPressed: ref.read(authStateProvider.notifier).loginWithGoogle,
+            child: const Text('Sign in with Google'),
+          ),
+          TextButton(
+            onPressed: ref.read(authStateProvider.notifier).loginWithFacebook,
+            child: const Text('Sign in with Facebook'),
+          ),
+        ],
       ),
     );
   }
