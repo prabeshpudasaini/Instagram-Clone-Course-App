@@ -6,6 +6,7 @@
         "autocorrect",
         "Firestore",
         "riverpod",
+        "Signup",
         "typedefs"
     ],
     "dart.documentation": "full",
@@ -25,5 +26,8 @@
     "workbench.preferredLightColorTheme": "Monospace Light",
     "window.autoDetectColorScheme": true,
     "workbench.layoutControl.enabled": false,
-    "inlineChat.mode": "preview"
+    "inlineChat.mode": "preview",
+    "cSpell.ignoreWords": [
+        "dont"
+    ]
 }
