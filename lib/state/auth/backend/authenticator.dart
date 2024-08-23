@@ -46,6 +46,9 @@ class Authenticator {
             credential,
           );
         }
+        // FirebaseAuth.instance.currentUser?.linkWithCredential(
+        //   credential,
+        // );
         return AuthResult.success;
       }
       return AuthResult.failure;
