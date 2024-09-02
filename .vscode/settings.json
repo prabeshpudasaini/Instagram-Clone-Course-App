@@ -8,7 +8,8 @@
         "Firestore",
         "riverpod",
         "Signup",
-        "typedefs"
+        "typedefs",
+        "unfocus"
     ],
     "dart.documentation": "full",
     //Dart Settings

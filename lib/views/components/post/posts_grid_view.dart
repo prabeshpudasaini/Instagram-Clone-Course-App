@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_clone_app/state/posts/models/post.dart';
 import 'package:instagram_clone_app/views/components/post/post_thumbnail_view.dart';
+import 'package:instagram_clone_app/views/post_comments/post_comments_view.dart';
 
 class PostsGridView extends StatelessWidget {
   final Iterable<Post> posts;
@@ -24,7 +25,16 @@ class PostsGridView extends StatelessWidget {
         final post = posts.elementAt(index);
         return PostThumbnailView(
           post: post,
-          onTapped: () {},
+          onTapped: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => PostCommentsView(
+                  postId: post.postId,
+                ),
+              ),
+            );
+          },
         );
       },
     );
