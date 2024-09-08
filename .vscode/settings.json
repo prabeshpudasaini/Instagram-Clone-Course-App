@@ -32,6 +32,7 @@
     "cSpell.ignoreWords": [
         "dont"
     ],
+    "debug.internalConsoleOptions": "openOnSessionStart",
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,

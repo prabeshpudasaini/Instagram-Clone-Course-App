@@ -38,17 +38,18 @@ class Authenticator {
       if (e.code == Constants.accountExistsWithDifferentCredentials &&
           email != null &&
           credential != null) {
-        final providers =
-            await FirebaseAuth.instance.fetchSignInMethodsForEmail(email);
-        if (providers.contains(Constants.googleCom)) {
-          await loginWithGoogle();
-          FirebaseAuth.instance.currentUser?.linkWithCredential(
-            credential,
-          );
-        }
-        // FirebaseAuth.instance.currentUser?.linkWithCredential(
-        //   credential,
-        // );
+        // final providers =
+        //     await FirebaseAuth.instance.fetchSignInMethodsForEmail(email);
+        // if (providers.contains(Constants.googleCom)) {
+        //   await loginWithGoogle();
+        //   FirebaseAuth.instance.currentUser?.linkWithCredential(
+        //     credential,
+        //   );
+        // }
+        await loginWithGoogle();
+        FirebaseAuth.instance.currentUser?.linkWithCredential(
+          credential,
+        );
         return AuthResult.success;
       }
       return AuthResult.failure;
