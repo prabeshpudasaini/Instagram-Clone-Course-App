@@ -4,7 +4,6 @@ import 'package:instagram_clone_app/state/posts/providers/post_by_search_term_pr
 import 'package:instagram_clone_app/views/components/animations/data_not_found_animation_view.dart';
 import 'package:instagram_clone_app/views/components/animations/empty_contents_with_text_animation_view.dart';
 import 'package:instagram_clone_app/views/components/animations/error_animation_view.dart';
-import 'package:instagram_clone_app/views/components/post/posts_grid_view.dart';
 import 'package:instagram_clone_app/views/components/post/posts_sliver_grid_view.dart';
 import 'package:instagram_clone_app/views/constants/strings.dart';
 
