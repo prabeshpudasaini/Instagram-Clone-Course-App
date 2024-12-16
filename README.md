@@ -19,7 +19,7 @@
 
 <img style="height: 110px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original-wordmark.svg" alt="Built with Firebase" align="right"/>&nbsp;&nbsp;&nbsp;
 <img style="height: 100px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" alt="Built with Flutter" align="right"/>
-
+<img style="height: 100px" src="https://github.com/user-attachments/assets/1d05f672-1a4e-4568-8921-36ee869f92f6" alt="App Logo"/>
 
 # Instagram Clone App
 
